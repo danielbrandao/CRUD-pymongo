@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Update Car</title>
+  <title>Edit Car</title>
 </head>
 <body>
-  <h1>Update Car</h1>
+  <h1>Edit Car</h1>
 
-  <form action="/update" method="post">
+  <form action="/edit" method="post">
     <input type="hidden" name="car_id" value="{{ car.id }}">
 
     <label for="make">Make</label>
@@ -18,8 +18,17 @@
     <label for="year">Year</label>
     <input type="text" name="year" id="year" value="{{ car.year }}">
 
-    <label for="mileage">Mileage</label>
-    <input type="text" name="mileage" id="mileage" value="{{ car.mileage }}">
+    <label for="price">Price</label>
+    <input type="text" name="price" id="price" value="{{ car.price }}">
+
+    <label for="category">Category</label>
+    <input type="text" name="category" id="category" value="{{ car.category }}">
+
+    <label for="fuel">Fuel</label>
+    <input type="text" name="fuel" id="fuel" value="{{ car.fuel }}">
+
+    <label for="exchange">Exchange</label>
+    <input type="text" name="exchange" id="exchange" value="{{ car.exchange }}">
 
     <input type="submit" value="Update">
   </form>
