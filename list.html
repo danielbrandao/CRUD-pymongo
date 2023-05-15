@@ -12,7 +12,10 @@
         <th>Make</th>
         <th>Model</th>
         <th>Year</th>
-        <th>Mileage</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Fuel</th>
+        <th>Exchange</th>
         <th>Actions</th>
       </tr>
     </thead>
@@ -22,7 +25,10 @@
           <td>{{ car.make }}</td>
           <td>{{ car.model }}</td>
           <td>{{ car.year }}</td>
-          <td>{{ car.mileage }}</td>
+          <td>{{ car.price }}</td>
+          <td>{{ car.category }}</td>
+          <td>{{ car.fuel }}</td>
+          <td>{{ car.exchange }}</td>
           <td>
             <a href="/edit/{{ car.id }}">Edit</a>
             <a href="/delete/{{ car.id }}">Delete</a>
