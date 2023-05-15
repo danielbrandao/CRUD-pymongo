@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Car</title>
+</head>
+<body>
+  <h1>Update Car</h1>
+
+  <form action="/update" method="post">
+    <input type="hidden" name="car_id" value="{{ car.id }}">
+
+    <label for="make">Make</label>
+    <input type="text" name="make" id="make" value="{{ car.make }}">
+
+    <label for="model">Model</label>
+    <input type="text" name="model" id="model" value="{{ car.model }}">
+
+    <label for="year">Year</label>
+    <input type="text" name="year" id="year" value="{{ car.year }}">
+
+    <label for="mileage">Mileage</label>
+    <input type="text" name="mileage" id="mileage" value="{{ car.mileage }}">
+
+    <input type="submit" value="Update">
+  </form>
+</body>
+</html>
