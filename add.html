@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add New Car</title>
+  <title>Add Car</title>
 </head>
 <body>
-  <h1>Add New Car</h1>
-  <form action="/add_car" method="post">
-    <input type="text" name="car_make" placeholder="Car Make">
-    <input type="text" name="car_model" placeholder="Car Model">
-    <input type="text" name="car_year" placeholder="Car Year">
-    <input type="submit" value="Add Car">
+  <h1>Add Car</h1>
+
+  <form action="/add" method="post">
+
+    <label for="make">Make</label>
+    <input type="text" name="make" id="make">
+
+    <label for="model">Model</label>
+    <input type="text" name="model" id="model">
+
+    <label for="year">Year</label>
+    <input type="text" name="year" id="year">
+
+    <label for="price">Price</label>
+    <input type="text" name="price" id="price">
+
+    <label for="category">Category</label>
+    <input type="text" name="category" id="category">
+
+    <label for="fuel">Fuel</label>
+    <input type="text" name="fuel" id="fuel">
+
+    <label for="exchange">Exchange</label>
+    <input type="text" name="exchange" id="exchange">
+
+    <input type="submit" value="Add">
   </form>
 </body>
 </html>
